@@ -13,6 +13,9 @@ public class BallController : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        levelLoader.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (SceneManager.GetActiveScene().buildIndex + 1 < 6)
+            levelLoader.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        else
+            SceneManager.LoadScene("Menu");
     }
 }
