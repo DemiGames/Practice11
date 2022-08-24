@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4937433473020890760}
-  - component: {fileID: 4937433473020890767}
   m_Layer: 0
   m_Name: Gates
   m_TagString: Untagged
@@ -24,7 +23,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4937433473020890766}
-  m_LocalRotation: {x: -0, y: 0.99991786, z: -0, w: 0.012822469}
+  m_LocalRotation: {x: 0, y: 0.99991786, z: 0, w: 0.012819119}
   m_LocalPosition: {x: -8.377061, y: 0.02589941, z: -13.799494}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -32,20 +31,7 @@ Transform:
   - {fileID: 8681127503614578199}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &4937433473020890767
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4937433473020890766}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.075881, y: 12.374082, z: 9.389689}
-  m_Center: {x: -0.0000000032874654, y: 6.1205373, z: -4.660312}
+  m_LocalEulerAnglesHint: {x: 0, y: 178.531, z: 0}
 --- !u!1 &8681127502558504463
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,6 +236,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8681127503614578199}
   - component: {fileID: 8681127503614578192}
+  - component: {fileID: 1005024023}
+  - component: {fileID: 6366102860599376727}
   m_Layer: 0
   m_Name: LevelGate
   m_TagString: Untagged
@@ -295,6 +283,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &1005024023
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8681127503614578197}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 11.702554, z: 10.01166}
+  m_Center: {x: -0.0000000065097794, y: 6.3831973, z: -4.5057926}
+--- !u!114 &6366102860599376727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8681127503614578197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f362b75a8bc785f4eaa1d0f9e90d0642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8681127503663592942
 GameObject:
   m_ObjectHideFlags: 0
